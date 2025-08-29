@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+body {
+    margin: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    background: rgb(78, 78, 181);
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1{
+    background: white;
+    width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.content{
+    display: flex;
+    margin: 10px;
+}
+
+.container1 aside .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.container1 aside .item i{
+    color: rgb(93, 0, 255);
+    font-size: 25px;
+    margin: 5px;
+}
+
+.container1 aside .item .span1{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.container1 aside{
+    border-right: solid 3px rgb(239, 237, 237);
+}
+
+form{
+    margin-left: 10px;
+}
+
+form .text h3{
+    text-transform: capitalize;
+    color: rgb(93, 0, 255);
+    margin: 5px 0;
+}
+
+form .inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+form .inputs .items{
+    margin:15px 0;
+    width: 80%;
+    height: 35px;
+    background: rgb(239, 237, 237);
+    font-size: 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+form .inputs .items:focus{
+    border: solid 1px rgb(93, 0, 255);
+    box-shadow: 0 0 10px rgb(93, 0, 255);
+    scale: 1.01;
+}
+
+form .inputs .input3{
+    resize: none;
+    height: 100px;
+}
+
+form .inputs .input4{
+    width: 120px;
+    height: 35px;
+    background: rgb(93, 0, 255);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+form .inputs .input4:hover{
+    background: rgb(239, 237, 237);
+    color: rgb(93, 0, 255);
+    border: solid 2px rgb(93, 0, 255);
+}
+
+@media  (max-width: 800px){
+    .content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .content aside{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        border: none;
+        border-top: solid 3px rgb(239, 237, 237);
+        margin: 20px;
+    }
+}
